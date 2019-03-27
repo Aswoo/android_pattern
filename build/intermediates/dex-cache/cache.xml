@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/yunseung-u/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.3/b4b51d1925cdfda98fd861230c1ecb5855500129/baseLibrary-2.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/Users/yunseung-u/android_pattern/android_pattern/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.3_cc10ee5ebb3b22faf5af73e07cedcc8d8d18dca3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yunseung-u/android_pattern/android_pattern/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/yunseung-u/android_pattern/android_pattern/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_b2b94abadac21d5c86c9177acbbf1ee4960e375e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yunseung-u/android_pattern/android_pattern/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/yunseung-u/android_pattern/android_pattern/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_d908541ff0ee43335e6e3fdaef97d3207c455308.jar" />
+    </item>
+
+</items>
