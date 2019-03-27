@@ -3,6 +3,9 @@ package com.acme.tictactoe.model;
 import static com.acme.tictactoe.model.Player.O;
 import static com.acme.tictactoe.model.Player.X;
 
+import static com.acme.tictactoe.model.Player.O;
+import static com.acme.tictactoe.model.Player.X;
+
 public class Board {
 
     private Cell[][] cells = new Cell[3][3];
@@ -34,11 +37,17 @@ public class Board {
      *
      * @param row 0..2
      * @param col 0..2
+     * @return the player that moved or null if we did not move anything.
      *
      */
-    public void mark( int row, int col ) {
+    public Player mark( int row, int col ) {
+
+        Player playerThatMoved = null;
+
         if(isValid(row, col)) {
+
             cells[row][col].setValue(currentTurn);
+            playerThatMoved = currentTurn;
 
             if(isWinningMoveByPlayer(currentTurn, row, col)) {
                 state = GameState.FINISHED;
@@ -49,6 +58,8 @@ public class Board {
                 flipCurrentTurn();
             }
         }
+
+        return playerThatMoved;
     }
 
     public Player getWinner() {
