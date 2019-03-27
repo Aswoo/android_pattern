@@ -24,7 +24,7 @@ MVC, MVP, and MVVM architectures to organize the application.
 
 앱을 묶어주는 접착제. 어플리케이션에서 발생하는 일을 담당하는 마스터 컨트롤러 역할. 뷰가 컨트롤러에게 사용자가 버튼을 눌렀다고 알리면 컨트롤러는 그에 따라 어떻게 모델과 상호작용 할지 결정. 안드로이드 앱에서는 컨트롤러가 주로 액티비티나 프래그먼트로 표현
 
-![img](/Users/yunseung-u/android_pattern/android_pattern/images/mvc.png)
+![img](./images/mvc.png)
 
 ```java
 public class TicTacToeActivity extends AppCompatActivity {
@@ -146,7 +146,7 @@ MVC와 동일하며 변화가 없습니다.
 
 본질적으로는 MVC의 컨트롤러와 같지만, 뷰에 연결되는 것이 아니라 그냥 인터페이스라는 점이 다릅니다. 이에 따라 MVC가 가진 테스트 가능성 문제와 함께 모듈화/유연성 문제 역시 해결합니다. *사실 극단적으로 MVP를 따르는 사람들은 프리젠터가 절대로 어떤 안드로이드 API나 코드라도 참조해서는 안된다고 주장합니다.*
 
-![img](/Users/yunseung-u/android_pattern/android_pattern/images/mvp.png)
+![img](./images/mvp.png)
 
 아래 코드에서 프리젠터를 살펴보면, 각 행동의 의도가 더 단순하고 명확해진 것을 볼 수 있습니다. **뷰에게 무언가를 표시하는 방법을 지시하는 대신, 표시할 내용만 전달합니다.**
 
@@ -237,7 +237,7 @@ MVC와 동일하며 변화가 없습니다.
 
 뷰모델은 모델을 래핑하고 뷰에 필요한 옵저버블 데이터를 준비합니다. 또한 뷰가 모델에 이벤트를 전달할 수 있도록 훅(hook)을 준비합니다. 그러면서도 뷰모델이 뷰에 종속되지는 않습니다.
 
-![img]()
+![img](./images/mvvm.png)
 
 ```java
 public class TicTacToeViewModel implements ViewModel {
